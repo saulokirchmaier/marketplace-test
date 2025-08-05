@@ -8,6 +8,9 @@ const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  @media (max-width: 1440px) {
+    width: 280px;
+  }
 `;
 
 const SearchInput = styled.input`
