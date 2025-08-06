@@ -1,0 +1,74 @@
+[
+  {
+    "imageSrc": "/treanding/1.png",
+    "title": "Tightly: Smart Inventory",
+    "rating": 5.0,
+    "evaluators": 22,
+    "availability": "Free",
+    "description": "AI-driven replenishment, PO automation & backordering",
+    "build": null
+  },
+  {
+    "imageSrc": "/treanding/2.png",
+    "title": "WarmInbox",
+    "rating": 4.6,
+    "evaluators": 24,
+    "availability": "Free trial available",
+    "description": "Warm Up Emails to Improve Deliverability and Stay Out of Spam",
+    "build": null
+  },
+  {
+    "imageSrc": "/treanding/3.png",
+    "title": "Fraud Falcon - Block & Prevent",
+    "rating": 5.0,
+    "evaluators": 6,
+    "availability": "Free plan available",
+    "description": "Prevent fraud, chargeback & scammer orders automatically",
+    "build": null
+  },
+  {
+    "imageSrc": "/treanding/4.png",
+    "title": "Bloggle: Powerful Blog Builder",
+    "rating": 4.9,
+    "evaluators": 279,
+    "availability": "Free trial available",
+    "description": "Easily design better blog posts, optimize SEO & embed products",
+    "build": null
+  },
+  {
+    "imageSrc": "/treanding/5.png",
+    "title": "S: Store Locator",
+    "rating": 4.9,
+    "evaluators": 176,
+    "availability": "Free plan available",
+    "description": "Set up professional store locator page with dealer form easily",
+    "build": "Vetted By Sundancæ"
+  },
+  {
+    "imageSrc": "/treanding/6.png",
+    "title": "qikify Slide Cart, Sticky Cart",
+    "rating": 4.9,
+    "evaluators": 454,
+    "availability": "Free plan available",
+    "description": "Boost AOV with slide cart drawer upsell and sticky add to cart",
+    "build": "Built for Shopify"
+  },
+  {
+    "imageSrc": "/treanding/7.png",
+    "title": "T-fulfill",
+    "rating": 5.0,
+    "evaluators": 16,
+    "availability": "Free",
+    "description": "Bye to complex procedures, easy procurement, quick delivery.",
+    "build": null
+  },
+  {
+    "imageSrc": "/treanding/8.png",
+    "title": "Simple Invoice - Order Printer",
+    "rating": 4.9,
+    "evaluators": 305,
+    "availability": "Free to install",
+    "description": "Sending invoices has never been easier.",
+    "build": "Built for Shopify"
+  }
+]

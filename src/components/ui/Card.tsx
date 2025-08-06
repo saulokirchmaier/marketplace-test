@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { P } from "./P";
+import build from "next/dist/build";
 
 interface CardProps {
   $imageSrc: string;
@@ -9,12 +10,13 @@ interface CardProps {
   $evaluators: number;
   $availability: string;
   $description: string;
+  $build?: string | null;
 }
 
 const CardContainer = styled.div`
   position: relative;
   width: 300.25px;
-  height: 72.68px;
+  min-height: 72.68px;
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -53,6 +55,18 @@ const CardRatting = styled.div`
   gap: 4px;
 `;
 
+const BuildBox = styled.div`
+  height: 19px;
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+  background-color: #e0f0ff;
+  border-radius: 4px;
+  padding: 4px;
+`;
+
 export const Card = ({
   $imageSrc,
   $title,
@@ -60,6 +74,7 @@ export const Card = ({
   $evaluators,
   $availability,
   $description,
+  $build,
 }: CardProps) => {
   return (
     <CardContainer>
@@ -84,6 +99,14 @@ export const Card = ({
         <P $size="small" $color="secondary">
           {$description}
         </P>
+        {$build && (
+          <BuildBox>
+            <Image src="/diamond.png" alt="build" width={10.29} height={9} />
+            <P $size="small" $color="secondary">
+              {$build}
+            </P>
+          </BuildBox>
+        )}
       </CardContent>
     </CardContainer>
   );
