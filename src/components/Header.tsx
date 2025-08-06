@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Logo } from "./ui/Logo";
 import { Search } from "./ui/Search";
 import { Box } from "./ui/Box";
@@ -7,6 +7,7 @@ import { Button } from "./ui/Button";
 import { Modal } from "./ui/Modal";
 import { Link } from "./ui/Link";
 import { MenuButton } from "./ui/MenuButton";
+import Image from "next/image";
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -26,7 +27,6 @@ const HeaderContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 `;
 
 const Navigation = styled(Box)`
@@ -63,17 +63,29 @@ export const Header = () => {
           <Search placeholder="Search SaaS/AI, Apps, Agencies, and more" />
         </MediaBox>
         <Navigation $justifyContent="space-between">
-          <Link $color="secondary" $size="small" href="#">Categories</Link>
-          <Link $color="secondary" $size="small" href="#">Agencies</Link>
-          <Link $color="secondary" $size="small" href="#">Freelancers</Link>
-          <Link $color="secondary" $size="small" href="#">Students</Link>
-          <Link $color="primary" $size="small" $bold href="#">Hire Us</Link>
+          <Link $color="secondary" $size="small" href="#">
+            Categories
+          </Link>
+          <Link $color="secondary" $size="small" href="#">
+            Agencies
+          </Link>
+          <Link $color="secondary" $size="small" href="#">
+            Freelancers
+          </Link>
+          <Link $color="secondary" $size="small" href="#">
+            Students
+          </Link>
+          <Link $color="primary" $size="small" $bold href="#">
+            Hire Us
+          </Link>
         </Navigation>
         <MediaBox $gap={7}>
-          <Button $size="small" onClick={() => console.log("clicked")}>Sign Up</Button>
+          <Button $size="small" onClick={() => console.log("clicked")}>
+            Sign Up
+          </Button>
           <Button $outlined $size="small" onClick={() => console.log("clicked")}>
             Login
-            <img src="/login.svg" alt="login" />
+            <Image src="/login.svg" alt="login" width={24} height={24} />
           </Button>
         </MediaBox>
         <MenuButton toggleMenu={toggleMenu} />
@@ -82,17 +94,29 @@ export const Header = () => {
           <MobileNavigation $gap={20} $justifyContent="flex-start" $alignItems="center">
             <Search placeholder="Search SaaS/AI, Apps, Agencies, and more" />
             <Box $direction="column" $gap={12}>
-              <Link $color="secondary" $size="small" href="#">Categories</Link>
-              <Link $color="secondary" $size="small" href="#">Agencies</Link>
-              <Link $color="secondary" $size="small" href="#">Freelancers</Link>
-              <Link $color="secondary" $size="small" href="#">Students</Link>
-              <Link $color="primary" $size="small" $bold href="#">Hire Us</Link>
+              <Link $color="secondary" $size="small" href="#">
+                Categories
+              </Link>
+              <Link $color="secondary" $size="small" href="#">
+                Agencies
+              </Link>
+              <Link $color="secondary" $size="small" href="#">
+                Freelancers
+              </Link>
+              <Link $color="secondary" $size="small" href="#">
+                Students
+              </Link>
+              <Link $color="primary" $size="small" $bold href="#">
+                Hire Us
+              </Link>
             </Box>
             <Box $direction="column" $gap={12}>
-              <Button $size="small" onClick={() => console.log("clicked")}>Sign Up</Button>
+              <Button $size="small" onClick={() => console.log("clicked")}>
+                Sign Up
+              </Button>
               <Button $outlined $size="small" onClick={() => console.log("clicked")}>
                 Login
-                <img src="/login.svg" alt="login" />
+                <Image src="/login.svg" alt="login" width={24} height={24} />
               </Button>
             </Box>
           </MobileNavigation>

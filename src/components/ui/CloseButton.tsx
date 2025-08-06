@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 const CloseButtonStyled = styled.button`
@@ -14,7 +15,7 @@ const CloseButtonStyled = styled.button`
 export const CloseButton = ({ onClose }: { onClose: () => void }) => {
   return (
     <CloseButtonStyled onClick={onClose}>
-      <img src="/close.svg" alt="close" width={24} height={24} />
+      <Image src="/close.svg" alt="close" width={24} height={24} />
     </CloseButtonStyled>
   );
 };

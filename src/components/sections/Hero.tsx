@@ -23,9 +23,8 @@ export const HeroSection = () => {
         $evaluators={24}
         $availability="Free trial available"
         $description="North America's lowest transaction fees. Powering 500+ businesses."
-        $disabled={true}
       />
-      <DemoBox
+      {/* <DemoBox
         $mainImageSrc="/image-319.png"
         $imageSrc="/ceaser-checkouts.png"
         $title="Caesar Checkouts"
@@ -42,7 +41,7 @@ export const HeroSection = () => {
         $evaluators={24}
         $availability="Free trial available"
         $description="North America's lowest transaction fees. Powering 500+ businesses."
-      />
+      /> */}
     </Container>
   );
 };

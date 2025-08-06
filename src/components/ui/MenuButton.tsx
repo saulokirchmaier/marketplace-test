@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 const MenuButtonStyled = styled.button`
@@ -14,7 +15,7 @@ const MenuButtonStyled = styled.button`
 export const MenuButton = ({ toggleMenu }: { toggleMenu: () => void }) => {
   return (
     <MenuButtonStyled onClick={toggleMenu}>
-      <img src="/menu.svg" alt="menu" width={24} height={24} />
+      <Image src="/menu.svg" alt="menu" width={24} height={24} />
     </MenuButtonStyled>
   );
 };

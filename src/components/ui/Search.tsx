@@ -21,12 +21,12 @@ const SearchInput = styled.input`
   padding: 9px 18px 11px 30px;
 
   &::placeholder {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0px;
-  horizontal-align: center;
-  vertical-align: middle;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    horizontal-align: center;
+    vertical-align: middle;
   }
 
   &:focus {
