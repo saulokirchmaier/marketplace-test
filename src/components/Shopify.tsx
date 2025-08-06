@@ -72,15 +72,11 @@ export const Shopify = () => {
         </Content>
       </Box>
       <GuideBox>
-        <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="space-between">
-          <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-start">
-            <P $size="large">Guide</P>
-            <P $size="extraLarge">Bring customers back with apps that let you get creative with store credit.</P>
-          </Box>
-          <Box $direction="column" $gap={16} $alignItems="flex-start">
-            <Link $size="medium">{`Give them credit >`}</Link>
-          </Box>
+        <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-start">
+          <P $size="large">Guide</P>
+          <P $size="extraLarge">Bring customers back with apps that let you get creative with store credit.</P>
         </Box>
+        <Link $size="medium">{`Give them credit >`}</Link>
       </GuideBox>
     </Container>
   );

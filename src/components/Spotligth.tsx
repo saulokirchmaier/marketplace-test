@@ -41,7 +41,8 @@ const Title = styled.h2`
 const FeaturedBox = styled.div`
   width: 100%;
   max-width: 636.5px;
-  min-height: 262.38px;
+  height: 100%;
+  max-height: 272.1px;
   padding: 24px;
   background-color: #A689FA;
   border-radius: 8px;
@@ -49,13 +50,28 @@ const FeaturedBox = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  padding: 24px 0 24px 24px;
+  padding: 0 0 24px 24px;
 
   @media (max-width: 768px) {
     width: 318.25px;
-    padding: 24px 0 0 24px;
+    max-height: none;
+    height: auto;
+    padding: 24px;
     flex-direction: column;
-    gap: 0;
+    gap: 24px;
+  }
+`;
+
+const FeaturedContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 24px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
   }
 `;
 
@@ -64,6 +80,10 @@ const FeaturedImage = styled.img`
   max-width: 318.25px;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 
@@ -71,7 +91,7 @@ export const Spotlight = () => {
   return (
     <Container>
       <Box $direction="column" $alignItems="flex-start" $gap={24.37} style={{ flex: 1 }}>
-        <Title>Popular with merchants across Shopify</Title>
+        <Title>In the spotlight</Title>
         <Content>
           {data.map((item, index) => (
             <Card
@@ -88,15 +108,15 @@ export const Spotlight = () => {
         </Content>
       </Box>
       <FeaturedBox>
-        <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="space-between">
+        <FeaturedContent>
           <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-start">
             <P $size="large">Featured app</P>
             <P $size="extraLarge">Help customers find the right fit with size charts and guides.</P>
           </Box>
           <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-end">
-            <Link $size="medium">{`Give them credit >`}</Link>
           </Box>
-        </Box>
+          <Link $size="medium">{`Give them credit >`}</Link>
+        </FeaturedContent>
         <FeaturedImage src="/spotlight/featured.png" />
       </FeaturedBox>
     </Container>
