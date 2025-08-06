@@ -16,7 +16,7 @@ export interface DemoBoxProps {
   $disabled?: boolean;
 }
 
-const DemoBoxContainer = styled(Box)<{ $disabled?: boolean }>`
+const DemoBoxContainer = styled(Box) <{ $disabled?: boolean }>`
   min-width: 901px;
   height: 696px;
   border-radius: 50px;
@@ -29,6 +29,22 @@ const DemoBoxContainer = styled(Box)<{ $disabled?: boolean }>`
     `
     opacity: 63%;
   `}
+
+  @media (max-width: 1024px) {
+    min-width: 700px;
+    height: 540px;
+  }
+
+  @media (max-width: 768px) {
+    min-width: 500px;
+    height: 440px;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 300px;
+    height: auto;
+    border-radius: 25px;
+  }
 `;
 
 const DemoBoxImage = styled.div<{ $url: string }>`
@@ -38,6 +54,19 @@ const DemoBoxImage = styled.div<{ $url: string }>`
   background-size: cover;
   border-radius: 50px 50px 0 0;
   margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    height: 440px;
+  }
+
+  @media (max-width: 768px) {
+    height: 340px;
+  }
+
+  @media (max-width: 480px) {
+    height: 220px;
+    border-radius: 25px 25px 0 0;
+  }
 `;
 
 const DemoBoxContent = styled(Box)`
@@ -50,10 +79,45 @@ const DemoBoxContent = styled(Box)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    padding: 24px 40px;
+    height: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 30px;
+    height: 100px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 0 0 25px 25px;
+  }
 `;
 
 const DemoBoxButton = styled(Box)`
   height: 69px;
+
+  @media (max-width: 1024px) {
+    height: 60px;
+  }
+
+  @media (max-width: 768px) {
+    height: 50px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+
+    button {
+      width: 100%;
+    }
+  }
 `;
 
 export const DemoBox: React.FC<DemoBoxProps> = ({
