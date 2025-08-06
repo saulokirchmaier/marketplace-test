@@ -1,0 +1,56 @@
+[
+  {
+    "imageSrc": "/popular/1.png",
+    "title": "Shopify Email",
+    "rating": 4.7,
+    "evaluators": 1750,
+    "availability": "Free to install",
+    "description": "Email marketing made for commerce",
+    "build": null
+  },
+  {
+    "imageSrc": "/popular/2.png",
+    "title": "Facebook & Instagram",
+    "rating": 3.9,
+    "evaluators": 4358,
+    "availability": "Free to install",
+    "description": "Seamlessly manage your Facebook and Instagram presence",
+    "build": null
+  },
+  {
+    "imageSrc": "/popular/3.png",
+    "title": "Google & YouTube",
+    "rating": 4.6,
+    "evaluators": 3940,
+    "availability": "Free to install",
+    "description": "Drive sales by showcasing your products on Google and YouTube",
+    "build": null
+  },
+  {
+    "imageSrc": "/popular/4.png",
+    "title": "Shopify Inbox",
+    "rating": 4.7,
+    "evaluators": 4645,
+    "availability": "Free",
+    "description": "Connect with shoppers and drive sales with chat",
+    "build": null
+  },
+  {
+    "imageSrc": "/popular/5.png",
+    "title": "Shopify Search & Discovery",
+    "rating": 4.2,
+    "evaluators": 532,
+    "availability": "Free",
+    "description": "Customize your storefront search and discovery experience",
+    "build": null
+  },
+  {
+    "imageSrc": "/popular/6.png",
+    "title": "TikTok",
+    "rating": 4.8,
+    "evaluators": 9668,
+    "availability": "Free to install",
+    "description": "Launch TikTok Ads and sell directly via TikTok Shop",
+    "build": null
+  }
+]

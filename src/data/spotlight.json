@@ -1,0 +1,38 @@
+[
+  {
+    "imageSrc": "/spotlight/1.png",
+    "title": "Simplee Memberships & Rewards",
+    "rating": 5.0,
+    "evaluators": 78,
+    "availability": "Free trial available",
+    "description": "Sell memberships, give members perks, discounts, store credits",
+    "build": "Built for Shopify"
+  },
+  {
+    "imageSrc": "/spotlight/2.png",
+    "title": "DEL - Bulk Manage Orders",
+    "rating": 5.0,
+    "evaluators": 6,
+    "availability": "Free plan available",
+    "description": "Save time by bulk delete orders, cancel orders, archive orders",
+    "build": "Built for Shopify"
+  },
+  {
+    "imageSrc": "/spotlight/3.png",
+    "title": "Roblox",
+    "rating": null,
+    "evaluators": null,
+    "availability": "Free",
+    "description": "Reach new customers and sell your products in your experience",
+    "build": null
+  },
+  {
+    "imageSrc": "/spotlight/4.png",
+    "title": "LastHour Product Views Counter",
+    "rating": 5.0,
+    "evaluators": 5,
+    "availability": "Free",
+    "description": "Show real-time visitor counter to increase urgency & scarcity",
+    "build": "Built for Shopify"
+  }
+]

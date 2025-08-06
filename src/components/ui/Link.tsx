@@ -12,12 +12,12 @@ export const Link = styled.a<{
   }};
   font-size: ${(props) => {
     if (props.$size === "small") return "12px";
-    if (props.$size === "medium") return "14px";
+    if (props.$size === "medium") return "15.6px";
     if (props.$size === "large") return "16px";
   }};
   font-weight: ${(props) => {
     if (props.$size === "small") return "500";
-    if (props.$size === "medium") return "600";
+    if (props.$size === "medium") return "500";
     if (props.$size === "large") return "700";
   }};
 
@@ -27,7 +27,11 @@ export const Link = styled.a<{
     font-weight: 700;
   `}
 
-  line-height: 100%;
+  line-height: ${(props) => {
+    if (props.$size === "small") return "100%";
+    if (props.$size === "medium") return "23.2px";
+    if (props.$size === "large") return "23.2px";
+  }};
   letter-spacing: 0px;
   text-decoration: none;
 

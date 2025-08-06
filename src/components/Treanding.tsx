@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 import data from "@/data/treanding.json";
-import { P } from "../ui/P";
-import { Card } from "../ui/Card";
+import { Card } from "./ui/Card";
 
 const Container = styled.div`
   display: flex;
@@ -11,29 +10,22 @@ const Container = styled.div`
   align-items: flex-start;
   gap: 24.37px;
   width: 100%;
-  height: 314px;
+  min-height: 314px;
   max-width: 1297px;
   margin: 0 auto;
+  
+  @media (max-width: 1439px) {
+    padding: 20px 40px;
+  }
 `;
 
 const Content = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: start;
-  gap: 20px 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
   width: 100%;
-
-  @media (max-width: 1439px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  flex-wrap: wrap;
 `;
 
 const Title = styled.h2`

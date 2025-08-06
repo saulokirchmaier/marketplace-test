@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { DemoBox } from "../DemoBox";
+import { TreandingSection } from "../Treanding";
 
 const Container = styled.div`
   display: flex;
@@ -14,17 +15,18 @@ const Container = styled.div`
 
 export const HeroSection = () => {
   return (
-    <Container>
-      <DemoBox
-        $mainImageSrc="/image-321.png"
-        $imageSrc="/ceaser-checkouts.png"
-        $title="Caesar Checkouts"
-        $rating={4.5}
-        $evaluators={24}
-        $availability="Free trial available"
-        $description="North America's lowest transaction fees. Powering 500+ businesses."
-      />
-      {/* <DemoBox
+    <div>
+      <Container>
+        <DemoBox
+          $mainImageSrc="/image-321.png"
+          $imageSrc="/ceaser-checkouts.png"
+          $title="Caesar Checkouts"
+          $rating={4.5}
+          $evaluators={24}
+          $availability="Free trial available"
+          $description="North America's lowest transaction fees. Powering 500+ businesses."
+        />
+        {/* <DemoBox
         $mainImageSrc="/image-319.png"
         $imageSrc="/ceaser-checkouts.png"
         $title="Caesar Checkouts"
@@ -42,6 +44,8 @@ export const HeroSection = () => {
         $availability="Free trial available"
         $description="North America's lowest transaction fees. Powering 500+ businesses."
       /> */}
-    </Container>
+      </Container>
+      <TreandingSection />
+    </div>
   );
 };

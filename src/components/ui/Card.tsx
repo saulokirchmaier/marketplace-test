@@ -6,8 +6,8 @@ import build from "next/dist/build";
 interface CardProps {
   $imageSrc: string;
   $title: string;
-  $rating: number;
-  $evaluators: number;
+  $rating?: number | null;
+  $evaluators?: number | null;
   $availability: string;
   $description: string;
   $build?: string | null;
@@ -29,7 +29,7 @@ const CardIcon = styled.img`
 
 const CardContent = styled.div`
   width: 100%;
-  height: 71.68px;
+  min-height: 71.68px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -82,16 +82,20 @@ export const Card = ({
       <CardContent>
         <CardTitle>{$title}</CardTitle>
         <CardRatting>
-          <P $size="small" $color="secondary">
-            {$rating}
-          </P>
-          <Image src="/star.svg" alt="star" width={16} height={16} />
-          <P $size="small" $color="secondary">
-            ({$evaluators})
-          </P>
-          <P $size="small" $color="secondary">
-            •
-          </P>
+          {$rating && (
+            <>
+              <P $size="small" $color="secondary">
+                {$rating}
+              </P>
+              <Image src="/star.svg" alt="star" width={16} height={16} />
+              <P $size="small" $color="secondary">
+                ({$evaluators})
+              </P>
+              <P $size="small" $color="secondary">
+                •
+              </P>
+            </>
+          )}
           <P $size="small" $color="secondary">
             {$availability}
           </P>

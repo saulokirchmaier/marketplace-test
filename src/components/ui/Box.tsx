@@ -6,7 +6,7 @@ export const Box = styled.div<{
   $backgroundColor?: string;
   $padding?: number;
   $margin?: number;
-  $justifyContent?: "center" | "flex-start" | "flex-end" | "space-between" | "space-around";
+  $justifyContent?: "center" | "flex-start" | "flex-end" | "space-between" | "space-around" | "space-evenly";
   $alignItems?: "center" | "flex-start" | "flex-end";
 }>`
   background: ${(props) => props.$backgroundColor || "transparent"};
