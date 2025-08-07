@@ -35,21 +35,24 @@ const StyledSwiper = styled(Swiper)`
 `;
 
 export const Carousel = ({ children }: CarouselProps) => {
+  const slides = [...children, ...children];
   return (
     <StyledSwiper
       grabCursor={true}
       centeredSlides={true}
       slidesPerView={"auto"}
       spaceBetween={20}
+      loop={true}
       autoplay={{
-        delay: 10000,
+        delay: 5000,
         disableOnInteraction: false,
       }}
       modules={[Autoplay]}
+      initialSlide={1}
     >
-      {children.map((child, index) => (
+      {slides.map((slide, index) => (
         <SwiperSlide key={index} style={{ width: "fit-content" }}>
-          {child}
+          {slide}
         </SwiperSlide>
       ))}
     </StyledSwiper>

@@ -6,6 +6,8 @@ const Container = styled.div`
   padding: 41.5px 0;
   max-height: 779px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   z-index: 10;
 
   .swiper-slide {
