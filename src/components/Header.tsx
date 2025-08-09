@@ -30,7 +30,7 @@ const HeaderContent = styled.div`
 
 const Navigation = styled(Box)`
   width: 338px;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     display: none;
   }
 `;
@@ -41,13 +41,13 @@ const MenuButton = styled.button`
   cursor: pointer;
   display: none;
   padding: 5px;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     display: block;
   }
 `;
 
 const DesktopActions = styled(Box)`
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     display: none;
   }
 `;
@@ -60,7 +60,7 @@ const MobileNavigation = styled.div`
 `;
 
 const SearchWrapper = styled.div`
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     display: none;
   }
 `;

@@ -1,6 +1,6 @@
 [
   {
-    "imageSrc": "/popular/1.png",
+    "imageSrc": "/popular/1.svg",
     "title": "Shopify Email",
     "rating": 4.7,
     "evaluators": 1750,
@@ -9,7 +9,7 @@
     "build": null
   },
   {
-    "imageSrc": "/popular/2.png",
+    "imageSrc": "/popular/2.svg",
     "title": "Facebook & Instagram",
     "rating": 3.9,
     "evaluators": 4358,
@@ -18,7 +18,7 @@
     "build": null
   },
   {
-    "imageSrc": "/popular/3.png",
+    "imageSrc": "/popular/3.svg",
     "title": "Google & YouTube",
     "rating": 4.6,
     "evaluators": 3940,
@@ -27,7 +27,7 @@
     "build": null
   },
   {
-    "imageSrc": "/popular/4.png",
+    "imageSrc": "/popular/4.svg",
     "title": "Shopify Inbox",
     "rating": 4.7,
     "evaluators": 4645,
@@ -36,7 +36,7 @@
     "build": null
   },
   {
-    "imageSrc": "/popular/5.png",
+    "imageSrc": "/popular/5.svg",
     "title": "Shopify Search & Discovery",
     "rating": 4.2,
     "evaluators": 532,
@@ -45,7 +45,7 @@
     "build": null
   },
   {
-    "imageSrc": "/popular/6.png",
+    "imageSrc": "/popular/6.svg",
     "title": "TikTok",
     "rating": 4.8,
     "evaluators": 9668,

@@ -6,6 +6,7 @@ import { Box } from "../ui/Box";
 export const PopularSection = () => {
   return (
     <Box $direction="column" $alignItems="flex-start" $gap={24.37} style={{ flex: 1 }}>
+      <TreandingSection />
       <Shopify />
       <Spotlight />
       <TreandingSection />

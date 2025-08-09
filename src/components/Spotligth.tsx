@@ -5,6 +5,7 @@ import { Card } from "./ui/Card";
 import { Box } from "./ui/Box";
 import { P } from "./ui/P";
 import { Link } from "./ui/Link";
+import { ArrowRight } from "./ui/Arrow-right";
 
 const Container = styled.div`
   display: flex;
@@ -115,7 +116,10 @@ export const Spotlight = () => {
           </Box>
           <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-end">
           </Box>
-          <Link $size="medium">{`Give them credit >`}</Link>
+          <Box $alignItems="center" $direction="row" $gap={8} $justifyContent="center">
+            <Link $size="medium">Reduce returns</Link>
+            <ArrowRight />
+          </Box>
         </FeaturedContent>
         <FeaturedImage src="/spotlight/featured.png" />
       </FeaturedBox>

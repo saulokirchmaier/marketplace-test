@@ -1,6 +1,6 @@
 [
   {
-    "imageSrc": "/spotlight/1.png",
+    "imageSrc": "/spotlight/1.svg",
     "title": "Simplee Memberships & Rewards",
     "rating": 5.0,
     "evaluators": 78,
@@ -9,7 +9,7 @@
     "build": "Built for Shopify"
   },
   {
-    "imageSrc": "/spotlight/2.png",
+    "imageSrc": "/spotlight/2.svg",
     "title": "DEL - Bulk Manage Orders",
     "rating": 5.0,
     "evaluators": 6,
@@ -18,7 +18,7 @@
     "build": "Built for Shopify"
   },
   {
-    "imageSrc": "/spotlight/3.png",
+    "imageSrc": "/spotlight/3.svg",
     "title": "Roblox",
     "rating": null,
     "evaluators": null,
@@ -27,7 +27,7 @@
     "build": null
   },
   {
-    "imageSrc": "/spotlight/4.png",
+    "imageSrc": "/spotlight/4.svg",
     "title": "LastHour Product Views Counter",
     "rating": 5.0,
     "evaluators": 5,

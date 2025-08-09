@@ -6,6 +6,7 @@ import { Card } from "./ui/Card";
 import { Box } from "./ui/Box";
 import { P } from "./ui/P";
 import { Link } from "./ui/Link";
+import { ArrowRight } from "./ui/Arrow-right";
 
 const Container = styled.div`
   display: flex;
@@ -76,7 +77,10 @@ export const Shopify = () => {
           <P $size="large">Guide</P>
           <P $size="extraLarge">Bring customers back with apps that let you get creative with store credit.</P>
         </Box>
-        <Link $size="medium">{`Give them credit >`}</Link>
+        <Box $alignItems="center" $direction="row" $gap={8} $justifyContent="flex-start">
+          <Link $size="medium">Give them credit</Link>
+          <ArrowRight />
+        </Box>
       </GuideBox>
     </Container>
   );

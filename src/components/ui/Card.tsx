@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { P } from "./P";
-import build from "next/dist/build";
 
 interface CardProps {
   $imageSrc: string;
@@ -23,6 +22,7 @@ const CardContainer = styled.div`
 `;
 
 const CardIcon = styled.img`
+  margin-top: 4px;
   width: 52px;
   height: 52px;
 `;
@@ -43,9 +43,9 @@ const CardTitle = styled.p`
   line-height: 20.3px;
   letter-spacing: 0px;
   font-style: medium;
-  vertical-align: middle;
+  vertical-align: top;
   color: #000000;
-`;
+  `;
 
 const CardRatting = styled.div`
   display: flex;
@@ -87,7 +87,7 @@ export const Card = ({
               <P $size="small" $color="secondary">
                 {$rating}
               </P>
-              <Image src="/star.svg" alt="star" width={16} height={16} />
+              <Image src="/star.svg" alt="star" width={11.99} height={11.07} />
               <P $size="small" $color="secondary">
                 ({$evaluators})
               </P>

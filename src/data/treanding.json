@@ -1,6 +1,6 @@
 [
   {
-    "imageSrc": "/treanding/1.png",
+    "imageSrc": "/treanding/1.svg",
     "title": "Tightly: Smart Inventory",
     "rating": 5.0,
     "evaluators": 22,
@@ -9,7 +9,7 @@
     "build": null
   },
   {
-    "imageSrc": "/treanding/2.png",
+    "imageSrc": "/treanding/2.svg",
     "title": "WarmInbox",
     "rating": 4.6,
     "evaluators": 24,
@@ -18,7 +18,7 @@
     "build": null
   },
   {
-    "imageSrc": "/treanding/3.png",
+    "imageSrc": "/treanding/3.svg",
     "title": "Fraud Falcon - Block & Prevent",
     "rating": 5.0,
     "evaluators": 6,
@@ -27,7 +27,7 @@
     "build": null
   },
   {
-    "imageSrc": "/treanding/4.png",
+    "imageSrc": "/treanding/4.svg",
     "title": "Bloggle: Powerful Blog Builder",
     "rating": 4.9,
     "evaluators": 279,
@@ -36,7 +36,7 @@
     "build": null
   },
   {
-    "imageSrc": "/treanding/5.png",
+    "imageSrc": "/treanding/5.svg",
     "title": "S: Store Locator",
     "rating": 4.9,
     "evaluators": 176,
@@ -45,7 +45,7 @@
     "build": "Vetted By Sundancæ"
   },
   {
-    "imageSrc": "/treanding/6.png",
+    "imageSrc": "/treanding/6.svg",
     "title": "qikify Slide Cart, Sticky Cart",
     "rating": 4.9,
     "evaluators": 454,
@@ -54,7 +54,7 @@
     "build": "Built for Shopify"
   },
   {
-    "imageSrc": "/treanding/7.png",
+    "imageSrc": "/treanding/7.svg",
     "title": "T-fulfill",
     "rating": 5.0,
     "evaluators": 16,
@@ -63,7 +63,7 @@
     "build": null
   },
   {
-    "imageSrc": "/treanding/8.png",
+    "imageSrc": "/treanding/8.svg",
     "title": "Simple Invoice - Order Printer",
     "rating": 4.9,
     "evaluators": 305,
