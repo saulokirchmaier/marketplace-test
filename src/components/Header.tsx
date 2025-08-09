@@ -71,7 +71,11 @@ export const Header = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 1440);
+      const isMobileSize = window.innerWidth <= 1440;
+      setIsMobile(isMobileSize);
+      if (!isMobileSize) {
+        setIsMenuOpen(false);
+      }
     };
 
     checkIfMobile();
