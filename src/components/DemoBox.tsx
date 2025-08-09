@@ -16,7 +16,7 @@ export interface DemoBoxProps {
   $disabled?: boolean;
 }
 
-const DemoBoxContainer = styled(Box) <{ $disabled?: boolean }>`
+const DemoBoxContainer = styled(Box)<{ $disabled?: boolean }>`
   min-width: 901px;
   height: 696px;
   border-radius: 50px;

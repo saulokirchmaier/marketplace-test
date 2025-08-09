@@ -45,7 +45,7 @@ const CardTitle = styled.p`
   font-style: medium;
   vertical-align: top;
   color: #000000;
-  `;
+`;
 
 const CardRatting = styled.div`
   display: flex;

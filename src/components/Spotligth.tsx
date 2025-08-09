@@ -16,7 +16,7 @@ const Container = styled.div`
   width: 100%;
   max-width: 1297px;
   margin: 10px auto;
-  
+
   @media (max-width: 1439px) {
     padding: 20px 40px;
   }
@@ -45,7 +45,7 @@ const FeaturedBox = styled.div`
   height: 100%;
   max-height: 272.1px;
   padding: 24px;
-  background-color: #A689FA;
+  background-color: #a689fa;
   border-radius: 8px;
   flex-shrink: 0;
   display: flex;
@@ -87,7 +87,6 @@ const FeaturedImage = styled.img`
   }
 `;
 
-
 export const Spotlight = () => {
   return (
     <Container>
@@ -114,8 +113,12 @@ export const Spotlight = () => {
             <P $size="large">Featured app</P>
             <P $size="extraLarge">Help customers find the right fit with size charts and guides.</P>
           </Box>
-          <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-end">
-          </Box>
+          <Box
+            $direction="column"
+            $gap={16}
+            $alignItems="flex-start"
+            $justifyContent="flex-end"
+          ></Box>
           <Box $alignItems="center" $direction="row" $gap={8} $justifyContent="center">
             <Link $size="medium">Reduce returns</Link>
             <ArrowRight />

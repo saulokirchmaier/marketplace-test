@@ -71,7 +71,7 @@ export const Header = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      const isMobileSize = window.innerWidth <= 1440;
+      const isMobileSize = window.innerWidth <= 1439;
       setIsMobile(isMobileSize);
       if (!isMobileSize) {
         setIsMenuOpen(false);
@@ -79,10 +79,10 @@ export const Header = () => {
     };
 
     checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
+    window.addEventListener("resize", checkIfMobile);
 
     return () => {
-      window.removeEventListener('resize', checkIfMobile);
+      window.removeEventListener("resize", checkIfMobile);
     };
   }, []);
 
@@ -98,14 +98,26 @@ export const Header = () => {
           <Search placeholder="Search SaaS/AI, Apps, Agencies, and more" />
         </SearchWrapper>
         <Navigation $justifyContent="space-between">
-          <P $color="secondary" $size="small">Categories</P>
-          <P $color="secondary" $size="small">Agencies</P>
-          <P $color="secondary" $size="small">Freelancers</P>
-          <P $color="secondary" $size="small">Students</P>
-          <P $color="primary" $size="small" $bold>Hire Us</P>
+          <P $color="secondary" $size="small">
+            Categories
+          </P>
+          <P $color="secondary" $size="small">
+            Agencies
+          </P>
+          <P $color="secondary" $size="small">
+            Freelancers
+          </P>
+          <P $color="secondary" $size="small">
+            Students
+          </P>
+          <P $color="primary" $size="small" $bold>
+            Hire Us
+          </P>
         </Navigation>
         <DesktopActions $gap={7}>
-          <Button $size="small" onClick={() => console.log("clicked")}>Sign Up</Button>
+          <Button $size="small" onClick={() => console.log("clicked")}>
+            Sign Up
+          </Button>
           <Button $outlined $size="small" onClick={() => console.log("clicked")}>
             Login
             <img src="/login.svg" alt="login" />
@@ -118,12 +130,24 @@ export const Header = () => {
         <Modal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
           <MobileNavigation>
             <Search placeholder="Search SaaS/AI, Apps, Agencies, and more" />
-            <P $color="secondary" $size="small">Categories</P>
-            <P $color="secondary" $size="small">Agencies</P>
-            <P $color="secondary" $size="small">Freelancers</P>
-            <P $color="secondary" $size="small">Students</P>
-            <P $color="primary" $size="small" $bold>Hire Us</P>
-            <Button $size="small" onClick={() => console.log("clicked")}>Sign Up</Button>
+            <P $color="secondary" $size="small">
+              Categories
+            </P>
+            <P $color="secondary" $size="small">
+              Agencies
+            </P>
+            <P $color="secondary" $size="small">
+              Freelancers
+            </P>
+            <P $color="secondary" $size="small">
+              Students
+            </P>
+            <P $color="primary" $size="small" $bold>
+              Hire Us
+            </P>
+            <Button $size="small" onClick={() => console.log("clicked")}>
+              Sign Up
+            </Button>
             <Button $outlined $size="small" onClick={() => console.log("clicked")}>
               Login
               <img src="/login.svg" alt="login" />

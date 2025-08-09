@@ -6,5 +6,5 @@ const ArrowRightStyled = styled.img`
 `;
 
 export const ArrowRight = () => {
-  return <ArrowRightStyled src="/arrow-right.svg" alt="arrow-right" />
-}
+  return <ArrowRightStyled src="/arrow-right.svg" alt="arrow-right" />;
+};

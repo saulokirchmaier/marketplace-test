@@ -27,16 +27,19 @@ Before you begin, ensure you have installed:
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone [repository-url]
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd marketplace
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 # or

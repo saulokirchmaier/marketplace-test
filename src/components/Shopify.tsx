@@ -17,7 +17,7 @@ const Container = styled.div`
   width: 100%;
   max-width: 1297px;
   margin: 10px auto;
-  
+
   @media (max-width: 1439px) {
     padding: 20px 40px;
   }
@@ -44,7 +44,7 @@ const GuideBox = styled.div`
   width: 318.25px;
   min-height: 262.38px;
   padding: 24px;
-  background-color: #FF7578;
+  background-color: #ff7578;
   border-radius: 8px;
   flex-shrink: 0;
   display: flex;
@@ -75,7 +75,9 @@ export const Shopify = () => {
       <GuideBox>
         <Box $direction="column" $gap={16} $alignItems="flex-start" $justifyContent="flex-start">
           <P $size="large">Guide</P>
-          <P $size="extraLarge">Bring customers back with apps that let you get creative with store credit.</P>
+          <P $size="extraLarge">
+            Bring customers back with apps that let you get creative with store credit.
+          </P>
         </Box>
         <Box $alignItems="center" $direction="row" $gap={8} $justifyContent="flex-start">
           <Link $size="medium">Give them credit</Link>
