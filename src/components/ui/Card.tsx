@@ -47,12 +47,19 @@ const CardTitle = styled.p`
   color: #000000;
 `;
 
-const CardRatting = styled.div`
+const CardRatting = styled.p`
   display: flex;
   direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  font-style: medium;
+  vertical-align: top;
+  color: #56524E;
 `;
 
 const BuildBox = styled.div`
@@ -67,7 +74,7 @@ const BuildBox = styled.div`
   padding: 4px;
 `;
 
-const BoxStar = styled.div`
+const BoxStar = styled.span`
   width: 11.99px;
   height: 11.07px;
   display: flex;
@@ -90,27 +97,25 @@ export const Card = ({
       <CardIcon src={$imageSrc} alt="CardIcon" />
       <CardContent>
         <CardTitle>{$title}</CardTitle>
-        <CardRatting>
-          {$rating && (
-            <>
-              <P $size="small" $color="secondary">
-                {$rating}
-              </P>
-              <BoxStar>
-                <Image src="/star.svg" alt="star" width={11.99} height={11.07} />
-              </BoxStar>
-              <P $size="small" $color="secondary">
-                ({$evaluators})
-              </P>
-              <P $size="small" $color="secondary">
-                •
-              </P>
-            </>
-          )}
-          <P $size="small" $color="secondary">
-            {$availability}
-          </P>
-        </CardRatting>
+        {$rating && (
+          <CardRatting>
+            <span>
+              {$rating}
+            </span>
+            <BoxStar>
+              <Image src="/star.svg" alt="star" width={11.99} height={11.07} />
+            </BoxStar>
+            <span>
+              ({$evaluators})
+            </span>
+            <span>
+              •
+            </span>
+            <span>
+              {$availability}
+            </span>
+          </CardRatting>
+        )}
         <P $size="small" $color="secondary">
           {$description}
         </P>
