@@ -8,7 +8,7 @@ const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     width: 280px;
   }
 `;

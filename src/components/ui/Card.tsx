@@ -22,7 +22,7 @@ const CardContainer = styled.div`
 `;
 
 const CardIcon = styled.img`
-  margin-top: 4px;
+  margin-top: 3px;
   width: 52px;
   height: 52px;
 `;
@@ -67,6 +67,15 @@ const BuildBox = styled.div`
   padding: 4px;
 `;
 
+const BoxStar = styled.div`
+  width: 11.99px;
+  height: 11.07px;
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
 export const Card = ({
   $imageSrc,
   $title,
@@ -87,7 +96,9 @@ export const Card = ({
               <P $size="small" $color="secondary">
                 {$rating}
               </P>
-              <Image src="/star.svg" alt="star" width={11.99} height={11.07} />
+              <BoxStar>
+                <Image src="/star.svg" alt="star" width={11.99} height={11.07} />
+              </BoxStar>
               <P $size="small" $color="secondary">
                 ({$evaluators})
               </P>
